@@ -12,6 +12,7 @@ const saveFormStateToLocalStorage = throttle(() => {
     localStorage.setItem('feedback-form-state', JSON.stringify(formState));
 }, 500);
 
+
 feedbackForm.addEventListener('input', saveFormStateToLocalStorage);
 
 window.addEventListener('DOMContentLoaded', () => {
